@@ -1,0 +1,107 @@
+.first-labos{
+    background: var(--color-black);
+    h3{
+        font-family: var(--font-secondary);
+        font-weight: 300;
+        font: typo(40px);
+        line-height: 150%;
+        padding: 100px 0px;
+        margin: 0;
+
+        span{
+            font-weight: 600;
+        }
+    }
+
+    .cartes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .carte{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 32px;
+
+        .carte-media{
+            img{
+                display: block;
+                border-radius: 16px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .carte-content{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 32px;
+            h4{
+               margin: 0;
+               font: var(--color-white);
+               font-family: var(--font-secondary);
+               font-weight: 600;
+               line-height: 150%;
+               font: typo(16px);
+               letter-spacing: 4%;
+            }
+            h5{
+margin: 0;
+font: var(--color-white);
+               font-family: var(--font-secondary);
+               font-weight: 300;
+               line-height: 150%;
+               font: typo(32px);
+               opacity: 55%;
+
+               span{
+                font: var(--color-white);
+               font-family: var(--font-secondary);
+               font-weight: 600;
+               line-height: 150%;
+               font: typo(32px);
+               }
+            }
+            p{
+margin: 0;
+font: var(--color-white);
+ font-weight: 300;
+               line-height: 150%;
+               font: typo(18px);
+            }
+            .button{
+                background-color: var(--color-primary);
+                padding: 8px 16px;
+                border-radius: 100px;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+
+                &:hover{
+                background-color: var(--color-bg-primary);
+                }
+
+                a{
+                    font-family: var(--font-secondary);
+                    font-weight: 700;
+                    font: typo(16px);
+                    line-height: 150%;
+                    letter-spacing: 4%;
+                    color: var(--color-black);
+
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
